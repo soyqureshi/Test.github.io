@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel Store - Kids' Apparel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, #333, #555);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product-item h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-item p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kids' Apparel</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mens.html">Men's Apparel</a>
+        <a href="womens.html">Women's Apparel</a>
+        <a href="kids.html">Kids' Apparel</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="kids">
+            <h2>Kids' Apparel</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Kids' T-Shirt">
+                    <h3>Kids' T-Shirt</h3>
+                    <p>$15.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Kids' Hoodie">
+                    <h3>Kids' Hoodie</h3>
+                    <p>$25.00</p>
+                </div>
+                <!-- Add more kids' apparel items here -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Apparel Store</p>
+    </footer>
+</body>
+</html>
